@@ -27,6 +27,9 @@ display_corrmatrix = 1;
 make_consts_expage;
 load consts_expage;
 
+% load pre-calculated muon P at depth (without fstar and sigma0)
+load mucalib_depthcalc_precalc.mat;
+
 % declare fstarv and sigma0v vectors
 fstar10v = []; fstar10uncv = [];
 sigma010v = []; sigma010uncv = [];
@@ -90,12 +93,11 @@ for sn = 1:numel(site);
     %   p(7)    sigma026 (scaled by 1.0e-30)
 
     % pre-calculated muon P at depth (without fstar and sigma0)
-    mucalpre = mucalib_depthcalc_precalc(site{sn});
-    mucal.dz = mucalpre.dz;
-    mucal.Pfast10d = mucalpre.Pfast10d;
-    mucal.Pneg10d = mucalpre.Pneg10d;
-    mucal.Pfast26d = mucalpre.Pfast26d;
-    mucal.Pneg26d = mucalpre.Pneg26d;
+    mucal.dz = mucalpre.(site{sn}).dz;
+    mucal.Pfast10d = mucalpre.(site{sn}).Pfast10d;
+    mucal.Pneg10d = mucalpre.(site{sn}).Pneg10d;
+    mucal.Pfast26d = mucalpre.(site{sn}).Pfast26d;
+    mucal.Pneg26d = mucalpre.(site{sn}).Pneg26d;
 
     % fit parameters
     [mucal,pstar,rstar,Jstar,chi2,pvalue] = fit_params(mucal,consts);

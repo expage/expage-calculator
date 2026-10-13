@@ -54,8 +54,12 @@ expage-202610 calculator
   - Fixed handling of isostatic elevation/submergence adjustment (isostPmod/isostsubmmod).
 * erosion.m, burial.m, depthcalc.m, depthcalcET.m, mucalib.m, mucalib14.m, and mucalib_depthcalc.m:
   - Updated call to LSD_fix using the new geomagnetic framework.
-* mucalib_depthcalc_precalc.m:
-  - Regenerated pre-calculated muon depth production data for the updated production rate scaling.
+* mucalib_depthcalc.m + mucalib.m + mucalib14.m:
+  - mucalib_depthcalc.m now generates the file mucalib_depthcalc_precalc.mat with pre-calculated
+    muon depth production data which is used by mucalib.m and mucalib14.m.
+* Isostatic adjustment data is now saved in isost_data_ANU2017.mat, isost_data_Gowan2021.mat,
+  isost_data_ICE6G.mat, isost_data_ICE7G.mat, and isost_data_PD2015.mat which is loaded in
+  isost_data_load.m and isost_plot.m.
 
 ====================================================================================================
 

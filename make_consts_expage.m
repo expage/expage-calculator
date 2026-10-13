@@ -76,30 +76,6 @@ consts.Pref14unc = 1.46;
 consts.Pref14iso = 12.60;
 consts.Pref14isounc = 1.40;
 
-% % GLOBAL LOCKNE DATA =================================================
-% % Be-10 production rates - global expage-202610 ref prod rate
-% consts.Pref10 = 4.18;
-% consts.Pref10unc = 0.25;
-% consts.Pref10iso = 4.20;
-% consts.Pref10isounc = 0.26;
-% consts.P10_ref_sp = 4; % not used and not calibrated!
-% consts.delP10_ref_sp = 0.3; % not used and not calibrated!
-%
-% % Al-26 production rates - global expage-202610 ref prod rate
-% consts.Pref26 = 28.80;
-% consts.Pref26unc = 2.46;
-% consts.Pref26iso = 28.93;
-% consts.Pref26isounc = 2.80;
-% consts.P26_ref_sp = 28; % not used and not calibrated!
-% consts.delP26_ref_sp = 3; % not used and not calibrated!
-%
-% % C-14 production rates - global expage-202610 ref prod rate
-% consts.Pref14 = 12.89;
-% consts.Pref14unc = 1.45;
-% consts.Pref14iso = 12.90;
-% consts.Pref14isounc = 1.46;
-% % ====================================================================
-
 % Atomic number densities (atoms target/g mineral)
 % (Moles target * Avogadro's Number / Formula weight)
 % Quartz (SiO2)
@@ -126,22 +102,6 @@ consts.sigma0_14nu = 0.769e-31;
 consts.delsigma0_14nu = 123.793e-31;
 consts.fstar14nu = 1.321e-1;
 consts.delfstar14nu = 1.021e-1;
-
-% % GLOBAL LOCKNE DATA =================================================
-% % sigma0 and fstar calibrated for the expage calculator using mucalib.m (mucalib14.m for 14C)
-% consts.sigma0_10nu = 2.538e-31;
-% consts.delsigma0_10nu = 0.564e-31;
-% consts.fstar10nu = 1.754e-3;
-% consts.delfstar10nu = 0.381e-3;
-% consts.sigma0_26nu = 3.733e-30;
-% consts.delsigma0_26nu = 1.557e-30;
-% consts.fstar26nu = 1.292e-2;
-% consts.delfstar26nu = 0.536e-2;
-% consts.sigma0_14nu = 0.739e-31;
-% consts.delsigma0_14nu = 123.833e-31;
-% consts.fstar14nu = 1.314e-1;
-% consts.delfstar14nu = 1.021e-1;
-% % ====================================================================
 
 % sigma0 and fstar from CRONUScalc calculator (Marrero et al. 2016; Phillips et al. 2016)
 % not used in present version

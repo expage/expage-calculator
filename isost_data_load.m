@@ -12,23 +12,23 @@ for i = 1:numel(single_isost);
     if strcmp(single_isost(i),'-'); % '-' marks no isostatic adjustment
         continue;
     elseif strcmpi(single_isost(i),'ICE7G'); % if using the ICE7G adjustment
-        ICE7G = isost_data_ICE7G();
+        load isost_data_ICE7G.mat;
         ICE7Gv = strcmpi(isost,'ICE7G');
         isost(ICE7Gv) = {ICE7G};
     elseif strcmpi(single_isost(i),'ICE6G'); % if using the ICE6G adjustment
-        ICE6G = isost_data_ICE6G();
+        load isost_data_ICE6G.mat;
         ICE6Gv = strcmpi(isost,'ICE6G');
         isost(ICE6Gv) = {ICE6G};
     elseif strcmpi(single_isost(i),'ANU2017'); % if using the ANU2017 adjustment
-        ANU2017 = isost_data_ANU2017();
+        load isost_data_ANU2017.mat;
         ANU2017v = strcmpi(isost,'ANU2017');
         isost(ANU2017v) = {ANU2017};
     elseif strcmp(single_isost(i),'PD2015'); % if using Påsse and Daniels (2015) model
-        PD2015 = isost_data_PD2015();
+        load isost_data_PD2015.mat;
         PD2015v = strcmpi(isost,'PD2015');
         isost(PD2015v) = {PD2015};
     elseif strcmp(single_isost(i),'Gowan2021'); % if using the Gowan2021 model
-        Gowan2021 = isost_data_Gowan2021();
+        load isost_data_Gowan2021.mat;
         Gowan2021v = strcmpi(isost,'Gowan2021');
         isost(Gowan2021v) = {Gowan2021};
     elseif isfile(single_isost{i}); % if using a self-provided file

@@ -644,7 +644,7 @@ function [output,Pnucl] = fix_and_calc_Pref(output,sample,vars,col,Pnucl,numnucl
     
     % fill output
     output(sample.rown+1,col.(['P' nucl]):col.(['P' nucl 'unc'])) = ...
-        {num2str(Prefi,'%.2f'),num2str(Prefiunc,'%.2f')};
+        {num2str(Prefi,'%.3f'),num2str(Prefiunc,'%.3f')};
     
     % display Pref
     fprintf(1,[' \tP' nucl ' = %s ± %s at/g/yr'],output{sample.rown+1,col.(['P' nucl])},...
