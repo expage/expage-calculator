@@ -7,7 +7,8 @@ function glacialEdepth();
 % Calculates the weighted mean erosion of the depth profile (with reduced chi-square and P-value)
 % and plots simulated depth profiles for the samples of the profile.
 %
-% This is free software: you can use/copy/modify/distribute as long as you keep it free/open.
+% This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+% General Public License, version 2, as published by the Free Software Foundation (www.fsf.org).
 % Jakob Heyman (jakob.heyman@gu.se) 2018-2026
 
 clear; close all; tic();

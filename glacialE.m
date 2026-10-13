@@ -5,7 +5,8 @@ function glacialE();
 % Interpolates the best fitting glacial erosion to yield the 10Be/26Al/14C conc given as input
 % based on the time-dependent cosmogenic nuclide production rate.
 %
-% This is free software: you can use/copy/modify/distribute as long as you keep it free/open.
+% This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+% General Public License, version 2, as published by the Free Software Foundation (www.fsf.org).
 % Jakob Heyman (jakob.heyman@gu.se) 2018-2026
 
 clear; close all; tic();
